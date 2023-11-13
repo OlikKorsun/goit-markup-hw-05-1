@@ -386,7 +386,11 @@
                 <p class="footer-social-link-p">Subscribe</p>
                 <div class="form-input-subscibe">
                     <form class="form-input">
-                        <input class="e-mail-subscribe" type="text">
+                        <input class="e-mail-subscribe" 
+                               type="email" 
+                               placeholder="E-mail" 
+                               required 
+                               name="user_email">
                         <button class="button-subscribe" type="submit">
                                 <p>Subscribe</p>
                                 <svg class="button-icon-send" wigth="24" height="24">
@@ -399,6 +403,17 @@
         </div>
 
     </footer>
+
+    <div class="backdrop">
+        <div class="modal-form">
+            <button class="modal-close-x" type="button">
+                <svg class="modal-close-x-svg">
+                    <use href="./images/icons.svg#icon-close-x" width="8" height="8"></use>
+                </svg>
+
+            </button>
+        </div>
+    </div> 
 
 </body>
 
