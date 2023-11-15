@@ -404,15 +404,73 @@
 
     </footer>
 
+    <!-- Спливаюче выкно -->
     <div class="backdrop is-open backdrop-container">
         <div class="modal-form">
             <button class="modal-close-x-btn" type="button">
                 <svg class="modal-close-x-svg" width="8" height="8" aria-label="modal close button">
                     <use href="./images/icons.svg#icon-close-x" ></use>
                 </svg>
-
             </button>
+            <p class="modal-head-text">Leave your contacts and we will call you back</p>
+            <form class="modal-contacts-form">
+
+            <div class="modal-contacts-info">
+                
+                <div class="local-text-input">
+                <label class="modal-rewiew-label"  for="user_name" >
+                Name
+                </label>
+                <input type="text" 
+                        name="user_name" 
+                        id="user_name" 
+                        required
+                        pattern="[a-zA-Zа-яА-яІіЇїҐґЄє'Йй]+"
+                        title="Ольга">
+                </div>
+                
+                <div class="local-text-input">
+                <label class="modal-rewiew-label" for="user_phone">
+                Phone
+                </label>
+                <input type="tel" 
+                        name="user_phone" 
+                        id="user_phone" 
+                        required>
+                </div>
+
+                <div class="local-text-input">
+                <label class="modal-rewiew-label" for="user_email">
+                Email
+                </label>
+                <input type="email" 
+                        name="user_email" 
+                        id="user_email" 
+                        required>
+                </div>
+
+                <div class="local-text-input">
+                <label class="modal-rewiew-label" for="user_comment">
+                Comment
+                </label>
+                <textarea class="modal-rewiew-textarea" 
+                        name="user_comment" 
+                        id="user_comment" 
+                        placeholder="Text input"></textarea>
+                </div>
+            </div>
+            
+            <div class="modal-checkbox">
+                <input class="modal-rewiew-checkbox" type="checkbox" name="user_modal_checkbox" id="user_modal_checkbox">
+                <label class="modal-rewiew-label-checkbox" for="user_modal_checkbox">
+                    I accept the terms and conditions of the <a href="#" class="privacy-policy-link">Privacy Policy</a>
+                </label>
+            </div>
+
+            <button class="modal-submit" type="submit">Send</button>
+        
         </div>
+        </form>
     </div> 
 
 </body>

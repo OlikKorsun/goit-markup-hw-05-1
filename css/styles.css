@@ -166,7 +166,9 @@ body {
   .main-button:hover,
   .main-button:focus,
   .button-subscribe:hover,
-  .button-subscribe:focus {
+  .button-subscribe:focus,
+  .modal-submit:hover,
+  .modal-submit:focus {
     background-color: var(--pressedstate-color-ocean, #404BBF);
    }
 
@@ -645,3 +647,35 @@ body {
     transform: translate(-50%, -50%);
     /*transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
     }
+
+    .modal-head-text {
+      color: var(--NAVY-BLUE, #2E2F42);
+      text-align: center;
+      font-weight: 500;
+      
+    }
+    
+    .modal-contacts-info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+        }
+
+      .local-text-input {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .modal-submit{
+        padding: 16px 32px;
+        border-radius: 4px;
+        border: none;
+        background-color: var(--primarybrand-color-iris, #4D5AE5);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: var(--whitebackground-color-wtite, #FFF);
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        width: 169px;
+      }
