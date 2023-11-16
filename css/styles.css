@@ -663,6 +663,7 @@ body {
         flex-direction: column;
         gap: 4px;
       }
+
     .modal-rewiew-label {
       color: var(--subtitletext-color-ligntslate, #8E8F99);
       font-family: Roboto;
@@ -694,10 +695,26 @@ body {
    .modal-rewiew-input:hover,
    .modal-rewiew-textarea:hover,
    .modal-rewiew-textarea:focus {
-      border: 1px solid var(--primarybrand-color-iris, #4D5AE5);
-      fill: var(--primarybrand-color-iris, #4D5AE5);
+      border-color: 1px solid var(--primarybrand-color-iris, #4D5AE5);
+      outline-color: transparent;
+      outline-offset: 5px;
+  }
+
+    .modal-rewiew-input:focus + .modal-input-icon,
+    .modal-rewiew-input:hover + .modal-input-icon {
+      fill: #31D0AA;
     }
 
+  .modal-rewiew-wraper {
+    position: relative;
+  }
+
+  .modal-input-icon{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
   .modal-submit{
         padding: 16px 32px;
         border-radius: 4px;
