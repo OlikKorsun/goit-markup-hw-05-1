@@ -583,6 +583,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--whitebackground-color-wtite, #FFF);
     text-align: center;
@@ -602,10 +603,6 @@ body {
   gap: 16px;
  }
 
- .wer {
-  display: flex;
-  flex-direction: column;
- }
  .button-icon-send{
   fill: var(--light-color-cloud, #F4F4FD);
   margin-left: 16px;
