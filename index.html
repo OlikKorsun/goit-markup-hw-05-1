@@ -471,31 +471,33 @@
                 </div>
             </div>
                                 
-            <div class="modal-contacts-info">
+            <div class="modal-contacts-info-comment">
                 <label class="modal-rewiew-label" for="user-comment">
                 Comment
                 </label>
                 <textarea class="modal-rewiew-textarea" 
-                        name="user_comment" 
+                        name="user-comment" 
                         id="user-comment" 
-                        placeholder="Text input"
-                        disabled ></textarea>
-                </div>
+                        placeholder="Text input"></textarea>
+            </div>
                         
-            <div class="modal-checkbox">
-                <div class="modal-rewiew-wraper">
-                <input class="modal-rewiew-checkbox" 
+            <!-- <div class="modal-checkbox"> -->
+                <div class="modal-rewiew-wraper modal-checkbox">
+                <input class="modal-rewiew-checkbox visually-hidden" 
                         type="checkbox" 
-                        name="user_policy_checkbox" 
-                        id="user-policy-checkbox"
-                        value="true">
-                <svg class="modal-input-icon-check" width="16" height="16">
-                <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-                </div>
+                        name="user-privacy" 
+                        id="user-privacy"
+                        value="true"
+                        checked>
+                <!-- </div> -->
                 <label class="modal-rewiew-label-checkbox" 
-                        for="user-policy-checkbox">
-                    <span class="user-policy-checkbox-span"> I accept the terms and conditions of the </span><a href="#" class="privacy-policy-link">Privacy Policy</a>
+                        for="user-privacy">
+                    <span class="user-policy-checkbox-span">
+                        <svg class="modal-input-icon-check" width="10" height="8">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the <a class="privacy-policy-link" href="#">Privacy Policy</a>
                 </label>
             </div>
 
