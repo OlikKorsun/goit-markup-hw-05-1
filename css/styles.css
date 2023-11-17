@@ -711,7 +711,6 @@ body {
 
     .modal-rewiew-label {
       color: var(--subtitletext-color-ligntslate, #8E8F99);
-      /*font-family: Roboto;*/
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.04em;
