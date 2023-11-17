@@ -666,13 +666,13 @@ body {
 
     .modal-rewiew-label {
       color: var(--subtitletext-color-ligntslate, #8E8F99);
-      font-family: Roboto;
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.04em;
     }
 
     .modal-rewiew-input {
+      display: block;
       width: 100%;
       height: 40px;
       flex-shrink: 0;
@@ -682,6 +682,7 @@ body {
     }
 
     .modal-rewiew-textarea {
+      display: block;
       width: 100%;
       height: 120px;
       border-radius: 4px;
@@ -695,14 +696,14 @@ body {
    .modal-rewiew-input:hover,
    .modal-rewiew-textarea:hover,
    .modal-rewiew-textarea:focus {
-      border-color: 1px solid var(--primarybrand-color-iris, #4D5AE5);
+      border: 1px solid var(--primarybrand-color-iris, #4D5AE5);
       outline-color: transparent;
       outline-offset: 5px;
   }
 
     .modal-rewiew-input:focus + .modal-input-icon,
     .modal-rewiew-input:hover + .modal-input-icon {
-      fill: #31D0AA;
+      fill: var(--primarybrand-color-iris, #4D5AE5);
     }
 
   .modal-rewiew-wraper {
@@ -715,6 +716,24 @@ body {
     left: 16px;
     transform: translateY(-50%);
   }
+
+  .modal-rewiew-checkbox {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+
+  .modal-rewiew-checkbox:focus{
+    visibility: visible;
+
+  }
+  .modal-input-icon-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
   .modal-submit{
         padding: 16px 32px;
         border-radius: 4px;
@@ -728,6 +747,17 @@ body {
         width: 169px;
       }
 
-      .privacy-policy-link {
-       text-decoration: underline; 
-      }
+  .user-policy-checkbox-span {
+    color: var(--subtitletext-color-ligntslate, #8E8F99);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+  }
+
+  .privacy-policy-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    text-decoration: underline; 
+  }
