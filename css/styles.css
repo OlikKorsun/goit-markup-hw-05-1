@@ -686,7 +686,7 @@ body {
     }
 /*-------заголовок модального вікна-----*/
     .modal-head-text {
-      color: var(--NAVY-BLUE, #2E2F42);
+      color: var(--modaloverlay-color-navybluemodal, #2E2F42);
       text-align: center;
       font-weight: 500;
       margin-bottom: 16px;
@@ -697,7 +697,11 @@ body {
       display: flex;
       flex-direction: column;
       gap: 8px;
-        }
+    }
+
+    .modal-contacts-form{
+      margin-bottom: 8px;
+    }
 
     .local-text-input {
         display: flex;
