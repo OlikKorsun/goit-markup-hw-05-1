@@ -537,6 +537,18 @@ body {
    background-color: var(--success-color-green, #31D0AA);
  }
 
+ .form-input-subscibe {
+  color: var(--whitebackground-color-wtite, #FFF);
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: left;
+ }
+
+ .form-subscibe {
+  display: flex;
+  gap: 24px;
+ }
+
  .e-mail-subscribe {
   width: 264px;
   height: 40px;
@@ -544,8 +556,12 @@ body {
   padding-left: 16px;
   border: 1px solid var(--whitebackground-color-wtite, #FFF);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: var(--dark-color-navy, #2E2F42);
+  background-color: transparent;
   color: #FFFFFF;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   }
 
   ::placeholder{
@@ -556,18 +572,21 @@ body {
   }
 
   .button-subscribe {
-    display: inline-flex;
-    color: var(--whitebackground-color-wtite, #FFF);
-    text-align: center;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
+    color: var(--whitebackground-color-wtite, #FFF);
+    text-align: center;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     justify-content: center;
     align-items: center;
     gap: 16px;
     border-radius: 4px;
+    border: none;
     background: var(--primarybrand-color-iris, #4D5AE5);
  }
 
@@ -578,6 +597,7 @@ body {
 
  .button-icon-send{
   fill: var(--light-color-cloud, #F4F4FD);
+  margin-left: 16px;
 }
 
 /*==== Описаловка модaльного вікна =====*/
@@ -608,31 +628,39 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   border-radius: 4px;
   background-color: var(--modalbackground-color-modal, #FCFCFC);
   padding: 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
+              0px 1px 3px rgba(0, 0, 0, 0.12), 
+              0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
   }
 
 /*------кнопка закривашка модального вікна------*/
 
   .modal-close-x-btn {
     position: absolute;
+    display: flex;
     width: 24px;
     height: 24px;
     top: 24px;
     right: 24px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--accent-color-cornflower, #E7E9FC);
     border-radius: 50%;
-    border-color: rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     fill: var(--modaloverlay-color-navybluemodal, #2E2F42);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .modal-close-x-btn:hover ,
   .modal-close-x-btn:focus {
     background-color: var(--pressedstate-color-ocean, #404BBF);
+    border: none;
     fill: var(--whitebackground-color-wtite, #FFFFFF);
     }
 /*-----сам хрестик у закривашці----*/
@@ -641,13 +669,13 @@ body {
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 /*-------заголовок модального вікна-----*/
     .modal-head-text {
       color: var(--NAVY-BLUE, #2E2F42);
       text-align: center;
       font-weight: 500;
-      margin-top: 48px;
       margin-bottom: 16px;
       
     }
@@ -658,11 +686,11 @@ body {
       gap: 8px;
         }
 
-      .local-text-input {
+    .local-text-input {
         display: flex;
         flex-direction: column;
         gap: 4px;
-      }
+    }
 
     .modal-rewiew-label {
       color: var(--subtitletext-color-ligntslate, #8E8F99);
