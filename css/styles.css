@@ -544,7 +544,7 @@ body {
   text-align: left;
  }
 
- .form-subscibe {
+ .form-subscribe {
   display: flex;
   gap: 24px;
  }
@@ -590,11 +590,15 @@ body {
     background: var(--primarybrand-color-iris, #4D5AE5);
  }
 
- .form-input {
+ .footer-form-label {
   display: flex;
   gap: 16px;
  }
 
+ .wer {
+  display: flex;
+  flex-direction: column;
+ }
  .button-icon-send{
   fill: var(--light-color-cloud, #F4F4FD);
   margin-left: 16px;
