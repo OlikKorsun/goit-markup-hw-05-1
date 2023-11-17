@@ -537,6 +537,13 @@ body {
    background-color: var(--success-color-green, #31D0AA);
  }
 
+ .form-subscribe-p {
+  color: var(--whitebackground-color-wtite, #FFF);
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: left;
+ }
+ 
  .form-input-subscibe {
   color: var(--whitebackground-color-wtite, #FFF);
   font-weight: 500;
