@@ -821,7 +821,7 @@ visibility: visible;
     visibility: hidden;
   }*/
 
-  .modal-rewiew-checkbox:checked + .modal-input-icon-check > .user-policy-checkbox-span{
+  .modal-rewiew-checkbox:checked .modal-rewiew-label-checkbox > .user-policy-checkbox-span{
     background-color: var(--pressedstate-color-ocean, #404bbf);
     border: none;
     fill: var(--light-color-cloud, #F4F4FD);
