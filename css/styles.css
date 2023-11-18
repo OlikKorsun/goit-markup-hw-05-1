@@ -801,10 +801,12 @@ body {
     color:var(--subtitletext-color-ligntslate, #8e8f99);
   }
 
- /*
-  .modal-rewiew-checkbox:focus + .modal-input-icon-check{
+ 
+  /*.modal-rewiew-checkbox:focus + .modal-rewiew-label-checkbox .modal-input-icon-check{
     visibility: visible;
     fill: #FFFFFF;
+    width: 16px;
+    height: 16px;
     background-color: #4D5AE5;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -812,12 +814,12 @@ body {
   
   .modal-input-icon-check {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     visibility: hidden;
   }*/
 
-  .modal-rewiew-checkbox:checked {
+  .modal-rewiew-checkbox:checked .modal-input-icon-check > .user-policy-checkbox-span{
     background-color: var(--pressedstate-color-ocean, #404bbf);
     border: none;
     fill: var(--light-color-cloud, #F4F4FD);
