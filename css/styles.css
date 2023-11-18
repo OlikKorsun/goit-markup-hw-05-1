@@ -571,7 +571,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   }
 
-  ::placeholder{
+  .e-mail-subscribe::placeholder{
   color: var(--whitebackground-color-wtite, #FFF);
   font-size: 12px;
   line-height: 2;
@@ -823,7 +823,7 @@ body {
     visibility: hidden;
   }
 */
-  input:checked {
+  .modal-rewiew-checkbox:checked {
     background-color: var(--pressedstate-color-ocean, #404bbf);
     border: none;
     fill: var(--light-color-cloud, #F4F4FD);
