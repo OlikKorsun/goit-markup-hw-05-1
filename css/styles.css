@@ -764,14 +764,6 @@ visibility: visible;
       outline-offset: 5px;
   }
 
-    .modal-rewiew-input:focus + .modal-input-icon,
-    .modal-rewiew-input:hover + .modal-input-icon {
-      fill: var(--primarybrand-color-iris, #4D5AE5);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    }
-
   .modal-rewiew-wraper {
     position: relative;
   }
@@ -783,6 +775,14 @@ visibility: visible;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
+  .modal-rewiew-input:focus+.modal-input-icon,
+  .modal-rewiew-input:hover+.modal-input-icon {
+    fill: var(--primarybrand-color-iris, #4D5AE5);
+    transition: fill 1250ms cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+     }
 
   .modal-checkbox {
     margin-bottom: 24px;
